@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "HealthTrackerApp", "PythonApplication1\HealthTrackerApp.pyproj", "{2724E4EF-D2A2-465A-B989-A3C69A021C47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2724E4EF-D2A2-465A-B989-A3C69A021C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2724E4EF-D2A2-465A-B989-A3C69A021C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20CD9C56-E1B3-4A44-B0E2-4CDA2E0A2285}
+	EndGlobalSection
+EndGlobal
