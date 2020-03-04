@@ -22,9 +22,25 @@ def main():
         print("Too few arguments!\nPlease pass in the file to analyzed.")
         sys.exit()
 
-    file = archive_original()
-    total_calories(file)
+    debug_status = True
 
+    if debug_status:
+        clean_work_folder()
+
+    #file = archive_original()
+    #total_calories(file)
+
+
+"""
+    This function is for development purposes only. If the archive_original() function has already been run,
+    and the dev wants to run the program on the original file, this will undo the actions of archive original.
+"""
+def clean_work_folder():
+    file_path_and_name_no_ext, file_ext = os.path.splitext(sys.argv[1])
+
+    if os.path.exists(file_path_and_name_no_ext + "OLD" + file_ext):
+        os.remove(sys.argv[1])
+        os.rename(file_path_and_name_no_ext + "OLD" + file_ext, sys.argv[1])
 
 """
     The purpose of this function is to create a copy of the passed in file and append 'OLD' to the 
@@ -50,7 +66,6 @@ def archive_original():
 """
 def total_calories(file):
     df = pd.read_excel(file, skip_blank_lines=True, sep=",", error_bad_lines=False)
-    print(df.iat[1,0])
 
     print(df)
 
@@ -88,7 +103,7 @@ def total_calories(file):
                 done = True
     
     print(df)
-    print(df.iat[1,0])
+    #print(df.iat[1,0])
     df.to_excel(file, index=False)
 
 
