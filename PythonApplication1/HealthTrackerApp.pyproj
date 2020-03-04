@@ -13,7 +13,7 @@
     <Name>HealthTrackerApp</Name>
     <RootNamespace>PythonApplication1</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>C:\Users\Donnie\Downloads\MacroTracker.csv</CommandLineArguments>
+    <CommandLineArguments>C:\Users\Donnie\Downloads\MacroTracker.xlsx</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
